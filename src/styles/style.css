@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+.container {
+    max-width: 730px;
+    margin: 118px auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 17px;
+}
+
+.img-omelete img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.conteudo-titulo {
+    margin: 40px 0;
+    font-family: "Young Serif", serif;
+    font-size: 45px;
+    color: #31302E;
+}
+
+.conteudo-descricao {
+    margin-bottom: 40px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: #858482;
+    line-height: 24px;
+}
+
+.conteudo-preparacao {
+    background-color: #FFF7FC;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.conteudo-preparacao h3 {
+    color: #6E2B4A;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.conteudo-preparacao li {
+    margin: 20px 30px;
+    font-family: "Outfit", sans-serif;
+    position: relative;
+    color: #7D7372;
+}
+
+.conteudo-preparacao li strong {
+    color: #655B5A;
+}
+
+.conteudo-preparacao li::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #6E2B4A;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+
+}
+
+.ingredientes {
+    border-bottom: 1px solid #E0E0E0;
+    margin: 30px 0;
+    padding-bottom: 30px;
+}
+
+.subtitulo {
+    font-family: "Young Serif", serif;
+    font-size: 30px;
+    color: #844631;
+    margin-bottom: 20px;
+}
+
+.ingredientes li {
+    margin: 20px 30px;
+    font-family: "Outfit", sans-serif;
+    position: relative;
+    color: #7B7A78;
+}
+
+.ingredientes-lista li::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #844631;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.instrucoes {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.instrucoes-lista li {
+    color: #844631;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    list-style: decimal;
+    margin-left: 25px;
+}
+
+.instrucoes-lista p {
+    margin-left: 15px;
+    color: #7B7A78;
+    font-weight: 400;
+}
+
+.instrucoes-lista strong {
+    font-weight: bold;
+    color: #68635F;
+}
+
+.nutricao {
+    margin-top: 30px;
+}
+
+.nutricao p {
+    color: #7B7A78;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.nutricao tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.nutricao-table td {
+    padding: 20px 240px 20px 20px;
+}
+
+.nutricao-table td {
+    color: #844631;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+}
+
+.nutricao-table .nutricao-tabela-esquerda {
+    color: #7B7A78;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        max-width: auto;
+    }
+
+    .img-omelete img {
+        border-radius: 0;
+    }
+
+    .conteudo {
+        padding: 0 20px 20px;
+    }
+
+    .conteudo-titulo {
+        font-size: 40px;
+    }
+
+    .nutricao-table td {
+        padding: 20px 80px 20px 20px;
+    }
+}
